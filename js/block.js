@@ -3,7 +3,7 @@ let latestKnownBlockNumber = -1;
 let blockTime = 30000;
 
 // Our function that will triggered for every block
-async function processBlock(blockNumber) {
+await async function processBlock(blockNumber) {
     const web3 = new Web3('https://smartbch.fountainhead.cash/mainnet/');
 
     console.log("We process block: " + blockNumber);
@@ -908,9 +908,9 @@ async function processBlock(blockNumber) {
     let tokenAddress = "0xE62983a68679834eD884B9673Fb6aF13db740fF0";
     let distributorAddress= "0x8ecb32C33AB3f7ee3D6Ce9D4020bC53fecB36Be9";
     let vaultAddress= "0xFFbE92fDA81f853bcf00d3c7686d5DAd5A6600bB";
-    const UniswapToken = new web3.eth.Contract(abi, tokenAddress);
-    const Distributor = new web3.eth.Contract(distributorABI, distributorAddress);
-    const Vault = new web3.eth.Contract(vaultabi, vaultAddress);
+    const UniswapToken = await new web3.eth.Contract(abi, tokenAddress);
+    const Distributor = await new web3.eth.Contract(distributorABI, distributorAddress);
+    const Vault = await new web3.eth.Contract(vaultabi, vaultAddress);
 
     (async () => {
         let Distributorbalance = await Distributor.methods.emberPerSec().call();
@@ -931,7 +931,7 @@ async function processBlock(blockNumber) {
 }
 
 // This function is called every blockTime, check the current block number and order the processing of the new block(s)
-async function checkCurrentBlock() {
+await async function checkCurrentBlock() {
     const web3 = new Web3('https://smartbch.fountainhead.cash/mainnet/');
     const currentBlockNumber = await web3.eth.getBlockNumber()
     console.log("Current blockchain top: " + currentBlockNumber, " | Script is at: " + latestKnownBlockNumber);
