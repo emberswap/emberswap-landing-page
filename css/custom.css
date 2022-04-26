@@ -252,7 +252,9 @@ body {
 .sec-three p {
 	color: #a8a8a9;
 }
-
+.sec-grey span {
+	color: #a8a8a9;
+}
 .third-container .title {
 	margin-bottom: 100px;
 }
