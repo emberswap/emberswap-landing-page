@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EmberSwap</title>
+	<link rel="shortcut icon" type="image/jpg" href="../img/tokens/ember.png"/>
+	<meta name="description" content="The official home of EmberSwap. EmberSwap is a community governed decentralized exchange, providing liquidity and enabling peer-to-peer transactions on the smartBCH Network. Whether you want to swap, farm, stake or just hold, EmberSwap is the DEX for you. EmberSwap breaks up and delivers the mostefficent route for any financial instrument on smartBCH.">
+    <meta name="keywords" content="incinerate,fire,ember,emberswap,dex,defi,emberdex,firedex,safemoonfork,burnomics,bitcoin,dogecoin,bch,sbch,smartbch,evm,cash,doge,defi,coinbase,coinmarketcap,coinmarket,smartscan,whitebit,coingecko,cryptocurrency,crypto,muesliswap,dex,etherium,eth,btc">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<link href="../css/custom.css" rel="stylesheet" type="text/css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/c6a495a0f8.js" rel="stylesheet" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script src=".././js/block.js" ></script>
+	<style>
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+    }
+	</style>
+	<script>
+		$(document).ready(function(){
+    		$(".dropdown").hover(function(){
+        	var dropdownMenu = $(this).children(".dropdown-menu");
+        		if(dropdownMenu.is(":visible")){
+            	dropdownMenu.parent().toggleClass("open");
+        		}
+    		});
+		});     
+	</script>
+</head>
+
+<body>
+	<div>
+	<div id="bg-radial-0"></div>
+	<div id="bg-radial-1"></div>
+	<div id="bg-radial-2"></div>
+	<div id="bg-radial-3"></div>
+	<div id="bg-radial-4"></div>
+	<div id="bg-radial-6"></div>
+
+	<nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center fixed-top">
+		<a href="../index.html" class="navbar-brand d-flex  mr-auto">
+			<img src="../img/logo.png" class="img-fluid" width="450"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+			<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link nav-link2" href="https://dex.emberswap.com/analytics">Analytics</a>
+				</li>
+				<li class="nav-item dropdown">
+						<a class="nav-link nav-link2" type="button" id="dropdownMenuButton" data-toggle="dropdown">FAQ
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="https://docs.emberswap.com/frequently-asked-questions">FAQ</a>
+							<a class="dropdown-item" href="https://docs.emberswap.com/getting-started">Getting Started</a>
+							<a class="dropdown-item" href="https://docs.emberswap.com/">Docs</a>
+						</div>
+				</li>
+				<li class="nav-item">
+						<a class="btn btn-outline-secondary" href="https://dex.emberswap.com">Enter App</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="col-xl-12 cont-first">
+		<div class="col-xl-11 m-auto">
+
+			<div class="row justify-content-center align-items-center h-100vh">
+				<div class="col-xl-6 sec-one">
+					<h1 class="text-white text-center font-weight-bolder text-xl-left d-none d-sm-block"> <a>DEFI ON BITCOIN CASH</a><br><br>THE MOST POWERFUL<br> COMMUNITY-DRIVEN<br> PLATFORM FOR
+						<a href="" class="typewrite strong"; data-period="2000"
+							data-type='["SWAPS","GOVERNANCE","GAINS"]'>
+							<span class="wrap"></span>
+						</a>
+					</h1>
+					<h1 class="text-white text-center font-weight-bolder text-xl-left d-xl-none d-lg-none d-md-none d-sm-none"> <a>DEFI ON</a> <a>BITCOIN CASH</a><br><br>THE MOST POWERFUL<br> COMMUNITY-DRIVEN<br> PLATFORM FOR
+						<a href="" class="typewrite strong"; data-period="2000"
+							data-type='["SWAPS","GOVERNANCE","GAINS"]'>
+							<span class="wrap"></span>
+						</a>
+					</h1>
+					<p class="text-center text-xl-left size">Decentralized, permissionless and open-source, EmberSwap is a public good governed by its community of token holders.
+
+				</div>
+
+				<div class="d-none d-md-block d-sm-none col-xl-6 sec-two text-center text-xl-right">
+					<img src="../img/candlesticks2.png" class=" inline-block m-auto">
+
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div class="col-xl-11 m-auto sec-container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-xl-3 text-center sec-three">
+					<h1 class="text-white" id="LiquidityPools" class="mb-0 text-white"><i class="fad fa-solid fa-spinner fa-pulse"></i></h1>
+					<p>Total Pairs</p>
+				</div>
+				<div class="col-xl-3 text-center sec-three">
+					<h1 class="text-white" id="LiquidityFarms"class="mb-0 text-white"><i class="fad fa-solid fa-spinner fa-pulse"></i></h1>
+					<p>New EMBER/block</p>
+				</div>
+				<div class="col-xl-3 text-center sec-three">
+					<h1 class="text-white" id="LiquidityLocked" ><i class="fad fa-solid fa-spinner fa-pulse"></i></h1>
+					<p>EMBER locked in vaults</p>
+				</div>
+				<div class="col-xl-3 text-center sec-three">
+					<h1 class="text-white">smartBCH<span></span></h1>
+					<p>Chain</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="col-xl-12 third-container text-center">
+		<h1 class="title">A strong emission curve made by the community</h1>
+		<img src="../img/Group 204.png" class="img-fluid">
+	</div>
+	<div class="col-xl-12 fourth-container">
+		<div class="col-xl-11 m-auto">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-xl-6 sec-five">
+					<h1 class="text-white text-center text-xl-left">What is EmberSwap?</h1>
+					<p class="mt-5 text-center text-xl-left">EmberSwap is a community governed decentralized exchange, providing liquidity and enabling peer-to-peer transactions on the smartBCH Network. Whether
+						you want to swap, farm, stake or just hold, EmberSwap is the DEX for you. EmberSwap breaks up and delivers the mostefficent
+						route for any financial instrument on smartBCH. 
+						The goal is to provide a comprehensive and convenient, one-stop platform for the cryptocurrency community.</p>
+					<div class="text-center text-xl-left">
+						<img src="../img/111.png" class="img-fluid">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-12 fifth-container position-relative">
+		<div id="bg-radial-5"></div>
+		<div class="col-xl-12 fifth-first">
+
+			<div class="col-xl-11 m-auto">
+				<div class="row justify-content-center align-items-center">
+
+					<div class="col-xl-8 text-center text-xl-left">
+						<img src="../img/tokens/fire.png" class="img-fluid">
+					</div>
+
+					<div class="col-xl-4 sec-six  mt-5">
+						<h1 class="text-white  text-center text-xl-left">Get Rewarded<br> For holding $FIRE</h1>
+						<p class="mt-5  text-center text-xl-left">10% of all emissions from farms will be distributed to token holders weekly. No need for complicated staking systems. Just hold <strong>$FIRE</strong> and get airdropped <strong>$EMBER</strong>.</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xl-12 sixth-container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-xl-11 sec-six">
+				<h1 class="text-white text-center">More than 50+ supported SEP-20 tokens</h1>
+	
+			</div>
+		</div>
+		<div class="row justify-content-center align-items-center">
+			<div class="coins-wrapper p-4 p-xl-5 mx-4">
+				<div class="coins m-auto">
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/bch.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/cats.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/celery.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/bchpad.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/ember.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/fire.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/flex.png">
+					</div>
+					<div class="coin">
+						<img class="img-fluid" src="../img/tokens/flexusd.png">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/goblins.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/honk.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/joy.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/catsluck.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/game.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/law.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/kth.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/lawusd.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/moonmoonmoonmoon.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/panda.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/sbusd.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/wojak.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/orb.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/lns.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/eve.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/dao.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/cao.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/bcharg.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/cryptosorted.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/smartindex.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/gocrypto.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/spice.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/sto.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/uatx.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/wenlambo.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/wireless.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/mist.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/potato.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/tango.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/xtango.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/mist.png" class="img-fluid">
+					</div>
+					<div class="coin">
+						<img src="../img/tokens/xmist.png" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-12 about-team">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-xl-11 sec-six m-auto">
+				<h1 class="text-center title">Meet the Founder</h1>
+			</div>
+		</div>
+		<div class="align-items-center mb-5 justify-content-center row">
+				<div class="text-center col-lg-2 col-4">
+					<div class="team-img team-member">
+						<img src="../img/team/bchpete.jpg" class="img-fluid mb-3" />
+					</div>
+					<div class="align-items-center mb-5 justify-content-center row">
+						<div class="text-center col-auto team-member">
+								<p class="mb-0 team-name" href="https://t.me/bchpete" target="_blank">bchpete</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="col-xl-12 seventh-container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-xl-11 sec-six m-auto">
+				<h1 class="text-center text-white">Learn more about EmberSwap</h1>
+				<p class="mt-5 text-center mb-5">Chat with the team and others in the community!</p>
+			</div>
+		</div>
+
+			<div class="row justify-content-center align-items-center">
+				<p class="mb-1">
+					<a href="https://discord.gg/x3TsF9MBrq" class="text-info" target="_blank" rel="nofollow noopener"><i class="fab fa-discord fa-2x fa-fw"></i></a>
+					<a href="https://twitter.com/EmberSwapDEX" class="text-info" target="_blank" rel="nofollow noopener"><i class="fab fa-twitter fa-2x fa-fw"></i></a>
+					<a href="https://t.me/IncinerateOfficial" class="text-info" target="_blank" rel="nofollow noopener"><i class="fab fa-telegram fa-2x fa-fw"></i></a>
+					<a href="https://www.reddit.com/r/incinerate_cash" class="text-info" target="_blank" rel="nofollow noopener"><i class="fab fa-reddit fa-2x fa-fw"></i></a>
+				</p>
+			</div>
+
+
+	</div>
+	<div class="text-lg-end text-right col">
+		<ul class="list-unstyled">
+			<li class="pb-2">
+				<a class="text-grey text-grey:hover mt-5 mb-5" href="https://github.com/emberswap/emberswap-contracts"
+				   target="_blank" rel="noopener">GitHub</a>
+			</li>
+			<li class="pb-2">
+				<a class="text-grey text-grey:hover mt-5 mb-5"href="https://disperse.emberswap.com/"
+				   target="_blank">Disperse</a>
+			</li>
+		</ul>
+	  </div>
+
+
+	<div class="col-xl-12" style="background:#1B1F26;padding:0;padding-top:1rem;padding-bottom: 1rem;">
+		<div class="col-xl-11 m-auto">
+			<p class="text-white text-center text-center">No Copyrights © Free The World | Decentralize Everything.</p>
+		</div>
+	</div>
+</div>
+
+
+
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap-4.3.1.js"></script>
+	<script src="../js/custom.js"></script>
+</body>
+
+</html>
