@@ -755,7 +755,8 @@ body {
 	border-radius: 50%;
   }
 .team-img img{
-	border-radius:50%}
+	border-radius:50%;
+	max-height:264px}
 	.team-img:hover,
 	.team-img img{
 	transition:all .25s ease-in-out
@@ -878,3 +879,4 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 		padding-top: 4rem;
 	}
 }
+::-webkit-scrollbar{width:14px;background-color:#292e38}::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,.1)}::-webkit-scrollbar-thumb,::-webkit-scrollbar-track-piece{background-clip:padding-box;border:3px solid transparent;border-radius:15px}::-webkit-scrollbar-track-piece{background-color:transparent}
