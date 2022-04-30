@@ -895,7 +895,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 	position: relative;
 }
 .theme-mobile-box{
-	left:85px;
+	left:115px;
 	position: relative;
 }
 @media (max-width:480px) {
