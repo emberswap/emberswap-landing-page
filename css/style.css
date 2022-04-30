@@ -1,3 +1,69 @@
+:root{
+  --grey: #616161;
+  --secondgrey: #6c757d;
+  --black: rgba(0, 0, 0, 0.87);
+  --green: #30deab;
+  --white: #fff;
+  --darkgrey:rgba(0,0,0,.125);
+  --background-color:#1B1F26;
+  --dark-red:#300309;
+  --orange:#c44d08;
+  --yellow:rgba(252, 210, 0, 0.658767);
+  --third-grey:#505050;
+  --fourth-grey:#636364;
+  --light-grey:#a8a8a9;
+  --darkergrey:#242425;
+  --lightgrey:#919192;
+  --darkorange:#965300;
+  --whitegrey:#e9e9e9;
+  --scrollbargrey:#292e38;
+  --semilightgrey:#b1bbc4;
+  --skill-box:rgba(255, 255, 255, 0.5);
+  --skill-box-title:rgba(255, 255, 255, 0.8);
+  --skill-box-description:rgba(255, 255, 255, 0.5);
+  --coinswrapper:rgba(255, 255, 255, 0.05);
+  --text-white: #fff;
+  --sec-container:rgba(255, 255, 255, 0.05);
+  --team-member:rgba(255, 255, 255, 0.5);
+  --typewritetext:rgba(255, 209, 101, 0.5);
+  --typewritetexttwo:rgba(255, 209, 101, 0.5);
+  --navlink:rgba(255, 255, 255, 0.5);
+  --navlinkfocused:rgba(255, 255, 255, 0.75);
+  --skill-box-img:rgba(255, 255, 255, 0.5);
+}
+html[data-theme="light"]{
+  --grey: #616161;
+  --secondgrey: #1B1F26;
+  --black: rgba(0, 0, 0, 0.87);
+  --green: #30deab;
+  --white: #000000;
+  --darkgrey:rgba(0,0,0,.125);
+  --background-color:#dddedf;
+  --dark-red:#300309;
+  --orange:#c44d08;
+  --yellow:rgba(252, 210, 0, 0.658767);
+  --third-grey:#221212;
+  --fourth-grey:#636364;
+  --light-grey:#242425;
+  --darkergrey:#a8a8a9;
+  --lightgrey:#919192;
+  --darkorange:#965300;
+  --whitegrey:#e9e9e9;
+  --scrollbargrey:rgba(0, 0, 0, 0.1);
+  --semilightgrey:#b1bbc4;
+  --skill-box:rgba(0, 0, 0, 0.5);
+  --skill-box-title:rgba(0, 0, 0, 0.8);
+  --skill-box-description:rgba(0, 0, 0, 0.5);
+  --coinswrapper:rgba(0, 0, 0, 0.05);
+  --text-white: #000000;
+  --sec-container:rgba(0, 0, 0, 0.05);
+  --team-member:rgba(0, 0, 0, 0.5);
+  --typewritetext:rgba(183, 136, 23, 0.5);
+  --typewritetexttwo:rgba(102, 73, 10, 0.5);
+  --navlink:rgba(0, 0, 0, 0.5);
+  --navlinkfocused:rgba(0, 0, 0, 0.75);
+  --skill-box-img:rgba(0, 0, 0, 0.5);
+}
 .faq-nav {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -13,12 +79,12 @@
     padding: 0px 0px;
     width: 40%;
     border: 0;
-    border: 1px solid grey;
+    border: 1px solid var(--secondgrey);
     border-radius: 16px;
-    color: #616161;
+    color: var(--grey);
     transition: background-color .2s ease; }
     .faq-nav .nav-link.active {
-      color: rgba(0, 0, 0, 0.87); }
+      color: var(--black); }
     .faq-nav .nav-link i.mdi {
       margin-right: 5px;
       font-size: 18px;
@@ -42,10 +108,10 @@
       white-space: normal;
       font-size: large; }
       .tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
-        color: #30DEAB;
+        color: var(--green);
         text-decoration: none; }
 .tab-content .card-body p {
-  color: #616161; }
+  color: var(--grey); }
   .tab-content .card-body p:last-of-type {
     margin: 0; }
 
@@ -63,20 +129,54 @@
   border: 0; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background: #30DEAB;
+  background: var(--green);
   border: 0; }
 
 .accordion > .card:not(:first-of-type):not(:last-of-type) {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--secondgrey);
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
 .accordion > .card:first-of-type {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--secondgrey);
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
 .accordion > .card:not(:first-child) {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--secondgrey);
   padding-top: 1rem;
   padding-bottom: 1rem; }
+
+@keyframes color-rotate{
+  from {
+    filter:hue-rotate(-9deg);
+  }
+  to {
+    filter:hue-rotate(9deg);
+  }
+}
+
+@keyframes fire-rotate{
+  from {
+    filter:hue-rotate(-5deg);
+  }
+  to {
+    filter:hue-rotate(15deg);
+  }
+}
+
+.logo{
+    animation: color-rotate 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fire-logo{
+  animation: fire-rotate 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.fire-reward {
+  text: var(--white)
+}

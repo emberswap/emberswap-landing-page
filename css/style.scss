@@ -14,16 +14,16 @@
         padding: 0px 0px;
 		width: 40%;
         border: 0;
-        border: 1px solid grey;
+        border: 1px solid var(--secondgrey);
         border-radius: 16px;
-        color: #616161;
+        color: var(--grey);
         transition: background-color .2s ease;
         
         &:hover {
         }
         
         &.active {
-            color: rgba(0,0,0,.87);        
+            color: var(--black);        
         }
         
         
@@ -55,7 +55,7 @@
                 width: 100%;
                 padding: 0;
                 border: 0;
-                color: white ;
+                color: var(--white) ;
                 text-align: left;
                 white-space: normal;
 				font-size:large;
@@ -64,7 +64,7 @@
                 &:focus,
                 &:active,
                 &:hover:active {
-					color:#30DEAB;
+					color:var(--green);
                     text-decoration: none;
                 }
             }
@@ -73,7 +73,7 @@
     
     .card-body {
         p {
-            color: #616161;
+            color: var(--grey);
             
             &:last-of-type {
                 margin: 0;
@@ -95,7 +95,7 @@
 
 .collapse.show {
     .card-body {
-        border-bottom: 1px solid rgba(0,0,0,.125);
+        border-bottom: 1px solid var(--darkgrey);
     }
 }
 .card{
@@ -107,21 +107,21 @@
 	border:0;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-	background: #30DEAB;
+	background: var(--green);
 	border:0;
 }
 .accordion > .card:not(:first-of-type):not(:last-of-type){
-	border-bottom:1px solid grey;
+	border-bottom:1px solid var(--secondgrey);
 	padding-top:1rem;
 	padding-bottom:1rem;
 }
 .accordion > .card:first-of-type{
-		border-bottom:1px solid grey;
+		border-bottom:1px solid var(--secondgrey);
 		padding-top:1rem;
 	padding-bottom:1rem;
 }
 .accordion > .card:not(:first-child){
-			border-bottom:1px solid grey;
+			border-bottom:1px solid var(--secondgrey);
 		padding-top:1rem;
 	padding-bottom:1rem;
 
