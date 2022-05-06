@@ -185,6 +185,8 @@ body {
 	padding-right: 3.5rem;
 	color: var(--white);
 	border: 1px solid var(--white);
+	transition: color 1000ms ease-in-out, border 1000ms ease-in-out;
+
 }
 
 .title {
@@ -192,6 +194,7 @@ body {
 	font-size: xxx-large;
 	line-height: 150%;
 	color: var(--white);
+	transition: color 1000ms ease-in-out;
 }
 
 .cont-first {
@@ -221,6 +224,7 @@ body {
 	font-family: 'Inter', sans-serif;
 	color: var(--secondgrey);
 	font-size: large;
+	transition: color 1000ms ease-in-out;
 }
 
 .sec-two {
@@ -238,7 +242,6 @@ body {
 	padding-bottom: 4rem;
 	border-radius: 16px;
 	margin-bottom: 10rem !important;
-
 }
 
 .sec-three h1 {
@@ -247,13 +250,16 @@ body {
 
 .sec-three span {
 	color: var(--fourth-grey);
+	transition: color 1000ms ease-in-out;
 }
 
 .sec-three p {
 	color: var(--light-grey);
+	transition: color 1000ms ease-in-out;
 }
 .sec-grey span {
 	color: var(--light-grey);
+	transition: color 1000ms ease-in-out;
 }
 .third-container .title {
 	margin-bottom: 100px;
@@ -274,6 +280,7 @@ body {
 .sec-five p {
 	font-family: 'Inter', sans-serif;
 	color: var(--secondgrey);
+	transition: color 1000ms ease-in-out;
 	font-size: large;
 
 }
@@ -287,6 +294,8 @@ body {
 
 .type-1 p {
 	color: var(--lightgrey);
+	transition: color 1000ms ease-in-out;
+
 }
 
 .type-1 .icon-1 {
@@ -338,6 +347,7 @@ body {
 .sec-six p {
 	font-family: 'Inter', sans-serif;
 	color: var(--secondgrey);
+	transition: color 1000ms ease-in-out;
 	font-size: large;
 
 }
@@ -421,6 +431,7 @@ body {
 .sec-seven p {
 	font-family: 'Inter', sans-serif;
 	color: var(--secondgrey);
+	transition: color 1000ms ease-in-out;
 	font-size: large;
 
 }
@@ -430,6 +441,7 @@ body {
 }
 .about-team .title {
 	color: var(--orange);
+	transition: color 1000ms ease-in-out;
 }
 .team-member p {
 	font-family: Inter;
@@ -440,6 +452,7 @@ body {
 	letter-spacing: 0.0016em;
 
 	color: var(--team-member);
+	transition: color 1000ms ease-in-out;
 }
 
 .skill-box {
@@ -461,6 +474,7 @@ body {
 	font-family: 'Akira.otf';
 	font-size: 18px;
 	line-height: 100%;
+	transition: color 1000ms ease-in-out;
 }
 .skill-box .description {
 	color: var(--skill-box-description);
@@ -468,6 +482,7 @@ body {
 	font-size: 14px;
 	line-height: 150%;
 	letter-spacing: 0.16px;
+	transition: color 1000ms ease-in-out;
 }
 .skill-box img {
 	position: absolute;
@@ -696,6 +711,7 @@ body {
 .trans-headeing h1 {
 	color: var(--white);
 	font-size: 15px;
+	transition: color 1000ms ease-in-out;
 	/* font-weight: bold; */
 }
 
@@ -703,6 +719,7 @@ body {
 	font-size: 35px;
 	color: var(--green);
 	font-weight: bold;
+	transition: color 1000ms ease-in-out;
 }
 
 .trans-headeing h1 input {
@@ -713,11 +730,13 @@ body {
 	max-width: 120px;
 	width: 100%;
 	color: var(--white);
+	transition: color 1000ms ease-in-out;
 	border-bottom: 1px solid var(--white);
 }
 
 .trans-headeing h1 input::placeholder {
 	color: var(--white);
+	transition: color 1000ms ease-in-out;
 }
 
 .calc-bar {
