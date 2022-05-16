@@ -188,6 +188,19 @@ body {
 	transition: color 1000ms ease-in-out, border 1000ms ease-in-out;
 
 }
+@media (max-width: 600px) {
+	.btn-outline-secondary {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		position:absolute;
+		left: 50px;
+		top:60px;
+		color: var(--white);
+		border: 1px solid var(--white);
+		transition: color 1000ms ease-in-out, border 1000ms ease-in-out;
+	
+	}	
+  }
 
 .title {
 	font-family: 'Akira.otf';

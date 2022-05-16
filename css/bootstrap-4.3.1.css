@@ -2394,6 +2394,18 @@ textarea.form-control {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .btn {
+    vertical-align: left;
+    width: 20%;
+    margin-right:50%;
+    line-height: 1;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
