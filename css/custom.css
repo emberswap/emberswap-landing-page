@@ -193,9 +193,11 @@ body {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;
 		position:absolute;
+		left: 20px;
 		top:60px;
 		color: var(--white);
 		font-size:small;
+		text-align: left;
 		border: 1px solid var(--white);
 		transition: color 1000ms ease-in-out, border 1000ms ease-in-out;
 	
