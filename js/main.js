@@ -28,6 +28,7 @@ $(document).ready(function(){
         if (current_theme == "dark"){
             $("html").attr("data-theme", "light");
             localStorage.setItem('theme', 'light')
+            document.body.classList.toggle("group204")
             if(document.body.classList.contains("group204")){
                 icon.src ="img/Group 205.png"
             }
